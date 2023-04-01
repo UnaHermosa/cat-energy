@@ -1,11 +1,12 @@
 .feature {
   box-sizing: border-box;
+
   @include order-reset;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:133px 62px;
+    grid-gap: 133px 62px;
 
     @media (min-width: 1440px) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -22,7 +23,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     width: 60px;

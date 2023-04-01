@@ -1,0 +1,95 @@
+.list {
+  @include order-reset;
+  padding: 22px 0 0;
+
+  &--checkbox {
+    padding-top: 0;
+  }
+
+  @media (min-width: 768px) {
+    &--radio {
+      padding: 29px 27px;
+      border: 1px solid var(--light-gray-radio);
+    }
+
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.list__item {
+  margin-bottom: 28px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--dark-gray-2);
+
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin-bottom: 38px;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
+}
+
+.list__radio:disabled {
+  opacity: 0.3;
+}
+
+.list__label {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+  }
+}
+
+.list__radio + .list__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--light-gray-radio);
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    top: -10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.list__radio:checked + .list__label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--basic-green);
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    top: 2px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,116 @@
+.feature {
+  box-sizing: border-box;
+  @include order-reset;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:133px 62px;
+
+    @media (min-width: 1440px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0 73px;
+    }
+  }
+}
+
+.feature__item {
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 17px;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic-green);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--healthy::before {
+    background-image: url("../../img/leaf.svg");
+    background-size: 30px 32px;
+  }
+
+  &--instant::before {
+    background-image: url("../../img/boil.svg");
+    background-size: 29px 31px;
+  }
+
+  &--eating::before {
+    background-image: url("../../img/dish.svg");
+    background-size: 25px 30px;
+  }
+
+  &--time::before {
+    background-image: url("../../img/time.svg");
+    background-size: 32px 33px;
+  }
+
+  @media (min-width: 768px) {
+    width: 250px;
+    padding-top: 111px;
+    margin-bottom: 0;
+    background-size: 80px 80px;
+
+    &::after {
+      position: absolute;
+      counter-increment: section;
+      content: counter(section);
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--light-gray-2);
+      right: 20px;
+      top: -37px;
+      text-align: center;
+      z-index: -1;
+    }
+
+    &:nth-child(2)::after {
+      right: 10px;
+    }
+
+    &:nth-child(3)::after,
+    &:nth-child(4)::after {
+      right: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.feature__item:last-child {
+  margin-bottom: 0;
+}
+
+.feature__item--time br {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.feature__text {
+  width: 72%;
+  min-height: 60px;
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 80px;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: 768px) {
+    width: 98%;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

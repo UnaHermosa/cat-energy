@@ -1,0 +1,39 @@
+.logo {
+  display: flex;
+}
+
+.logo:focus {
+  outline: 1 px solid var(--basic-black-60);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__text {
+  display: block;
+  font-size: 22px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    color: var(--special-dark-gray);
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+}
+
+.logo__img {
+  padding-right: 60px;
+
+  @media (min-width: 768px) {
+    padding-right: 10px;
+  }
+}

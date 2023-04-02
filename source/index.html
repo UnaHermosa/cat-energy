@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -45,6 +45,9 @@
       <div class="promo__wrapper"></div>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
         <img class="promo__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270"
@@ -135,15 +138,23 @@
       </div>
       <div class="special__wrappel-left">
         <ul class="special__slider slider">
-          <li class="slider__item slider__item-active">
+          <li class="slider__item">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-after-desktop.webp 1x, img/before-after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-after-tablet.webp 1x, img/before-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/before-after-desktop.png 1x, img/before-after-desktop@2x.png 2x" width="690" height="540">
               <source media="(min-width: 768px)" srcset="img/before-after-tablet.png 1x, img/before-after-tablet@2x.png 2x" width="708" height="545">
               <img class="slider__img" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="251" height="240"
               alt="Вид худого кота после применения программы">
             </picture>
           </li>
-          <li class="slider__item">
+          <li class="slider__item slider__item-active">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-after-desktop.webp 1x, img/before-after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-after-tablet.webp 1x, img/before-after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/before-after-desktop.png 1x, img/before-after-desktop@2x.png 2x" width="690" height="540">
+            <source media="(min-width: 768px)" srcset="img/before-after-tablet.png 1x, img/before-after-tablet@2x.png 2x" width="708" height="545">
             <img class="slider__img" src="./img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
               alt="Вид кота с ожирением до применения программы" />
           </li>

@@ -9,6 +9,7 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -155,7 +156,7 @@
             <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/before-after-desktop.png 1x, img/before-after-desktop@2x.png 2x" width="690" height="540">
             <source media="(min-width: 768px)" srcset="img/before-after-tablet.png 1x, img/before-after-tablet@2x.png 2x" width="708" height="545">
-            <img class="slider__img" src="./img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
+            <img class="slider__img" src="./img/cat-fat.png" with="311" height="232" srcset="img/cat-fat@2x.png 2x"
               alt="Вид кота с ожирением до применения программы" />
           </li>
         </ul>
@@ -225,7 +226,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

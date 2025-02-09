@@ -9,10 +9,15 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="page__nav nav">
-      <a class="nav__logo logo">
-        <img class="logo__img" src="" width="33" height="38" alt="Логотип сайта - рыжий кот в костюме супергероя">
-        <img class="logo__img-text" src="" width="101" height="18" alt="Надпись Cat Energy">
-      </a>
+      <div class="nav__logo-wrapper">
+        <a class="nav__logo logo">
+          <img class="logo__img" src="" width="33" height="38" alt="Логотип сайта - рыжий кот в костюме супергероя">
+          <img class="logo__img-text" src="" width="101" height="18" alt="Надпись Cat Energy">
+        </a>
+        <button class="nav__toggler">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+      </div>
       <ul class="nav__menu menu">
         <li class="menu__item menu__item--current">
           <a class="menu__link">Главная</a>
@@ -27,7 +32,7 @@
     </nav>
     <div class="header__title-wrapper">
       <div class="header__wrapper">
-        <h1 class="page__header-title header__title title title--main">Функциональное питание для котов</h1>
+        <h1 class="page__header-title header__title title">Функциональное питание для котов</h1>
         <p class="header__slogan">Занялся собой? Займись котом!</p>
         <a class="header__button" href="form.html">подобрать программу</a>
       </div>

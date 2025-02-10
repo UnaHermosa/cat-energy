@@ -1,0 +1,19 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Oswald';
+  font-weight: 500;
+  src:
+    local('Oswald'),
+    url(../fonts/Oswaldmedium.woff) format('woff'),
+    url(../fonts/oswaldmedium.woff2) format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Oswald';
+  font-weight: 400;
+  src:
+    local('Oswald'),
+    url(../fonts/Oswaldregular.woff) format('woff'),
+    url(../fonts/oswaldregular.woff2) format('woff2');
+}
